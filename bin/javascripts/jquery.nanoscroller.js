@@ -464,7 +464,7 @@
       direction = this.contentScrollTop > this.previousPosition ? "down" : this.contentScrollTop < this.previousPosition ? "up" : "same";
       this.previousPosition = this.contentScrollTop;
       if (direction !== "same") {
-        this.$el.trigger('update', {
+        this.$el.trigger('update:nano', {
           position: this.contentScrollTop,
           maximum: this.maxScrollTop,
           direction: direction

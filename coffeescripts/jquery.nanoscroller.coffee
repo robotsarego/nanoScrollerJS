@@ -455,7 +455,7 @@
                       "same"
       @previousPosition = @contentScrollTop
 
-      @$el.trigger 'update', { position: @contentScrollTop, maximum: @maxScrollTop, direction: direction} unless direction == "same"
+      @$el.trigger 'update:nano', { position: @contentScrollTop, maximum: @maxScrollTop, direction: direction} unless direction == "same"
 
       if not @iOSNativeScrolling
         @maxSliderTop = @paneHeight - @sliderHeight
